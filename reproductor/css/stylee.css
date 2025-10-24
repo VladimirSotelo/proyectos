@@ -1,0 +1,225 @@
+/*==================================== BODY ====================================*/
+*{
+    box-sizing: border-box;
+    margin:0;  
+    padding:0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+.container{
+    background-color: #222;
+    min-width: 100%;
+}
+/*==================================== HEADER ====================================*/
+.container_busqueda{
+    background-color: #eee;
+    display: grid;
+    gap: 50px;
+    align-items: center;
+    padding: 15px 10px;
+    padding-right: 25px;
+    grid-template-columns: auto 1fr;
+}
+
+.titulo_container{
+    grid-column: 1/2;
+}
+
+.titulo{
+    max-width: 100%;
+    height: 100px;
+    border-radius: 50px;
+    margin-left:10px;
+    object-fit: cover;
+}
+
+.busqueda{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container_busqueda label{
+    padding: 5px 0;
+}
+
+.inpBuscar,.btnBuscar{
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+}
+
+.btnBuscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #F28C24;
+    border-radius:0 15px  15px 0;
+    
+}
+
+.btnBuscar img{
+    margin-left: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.inpBuscar{
+    flex: 1;
+    min-width: 200px;
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+    border: 1px solid #222;
+    border-right:none ;
+}
+/*==================================== MAIN ====================================*/
+.container_resultado{
+    display: grid;
+    margin-top:20px;
+    color: #000;
+    grid-template-rows: auto auto ;
+    gap: 10px;
+    text-align: center;
+}
+
+.resultados{
+    min-height: 400px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.resultados p{
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.resultados li {
+    max-width: 300px;
+    flex: 1 1 300px;
+    padding:10px 3px 0 3px  ;
+    list-style: none;
+    background-color: #1b1b1b;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.5s
+}
+
+.resultados li:hover { 
+    background-color: #FF9C35;
+    color: #000;
+}
+
+.resultados li p{
+    line-height: 1.5;
+    height: calc(18px * 1.5 * 2);
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.resultados li img,
+.resultados li iframe {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.resultados a{
+    text-decoration: none;
+    color:#F28C24
+}
+.resultados li:hover a{
+    color:#fff;
+}
+
+#carga{
+    display: flex;
+    padding: 8px;
+    border-radius: 10px ;
+}
+#carga #mensaje{
+    margin: auto;
+    padding: 10px 3px;
+    background-color: #F28C24;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+.resultados li iframe, .resultados li img{
+    border-radius: 10px;
+}
+
+
+.paginacion{
+    padding: 20px;
+    background-color:#A3CAF766;/* F09C3466*/
+}
+
+.btnAnterior, .btnSiguiente {
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    border:none;
+    background-color: #F28C24;
+}
+.btnBuscar:hover, .btnAnterior:hover, .btnSiguiente:hover{
+    background-color: #FF9C35;
+    color: #fff;
+}
+/*==================================== FOOTER ====================================*/
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color:#fff;
+    background-color: #222;
+}
+
+footer a {
+    color: #F28C24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #93aAF7;
+    text-decoration: underline;
+}
+
+
+/*==================================== MEDIA QUERY ====================================*/
+/*============ HEADER =================*/
+@media (max-width: 550px) {
+    .container_busqueda {
+        text-align: center;
+        gap: 15px;
+    }
+
+    .busqueda {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inpBuscar,
+    .btnBuscar {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .btnBuscar {
+        height: 40px;
+        width: 100px;
+        margin-top: 10px;
+    }
+}

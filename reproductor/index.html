@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
+    <title>Reproductor de SoundPlay </title>
+</head>
+<body>
+    <div class="container">
+        <header >
+            <form id="form"class="container_busqueda">
+                <div class="titulo_container">
+                    <a href="index.html"><img class="titulo" src="imgs/icono.png" alt=""></a>
+                    <!--h1 class="titulo"><a href="index.html">Sound Play</a></h1-->
+                </div>
+
+                <div class="busqueda">
+                    <input id="aBuscar" class="inpBuscar" type="text" placeholder="¿Qué te gustaría ver?">
+                    <button id="buscar" class="btnBuscar"> Buscar <img src="imgs/search.svg" alt="search"></button>
+                </div>
+            </form>
+        </header>
+        
+        <main class="container_resultado">
+            <div id="carga"></div>
+            <ul class="resultados" id="listResultado"></ul>
+            
+            <div id="paginacion" class="paginacion" style="display: none;">
+                <button id="anterior" class="btnAnterior" >&#8592; Anterior </button>
+                <button id="siguiente" class="btnSiguiente">Siguiente &#8594;</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Sound Play. Todos los derechos reservados.</p>
+            <p>Este sitio utiliza la
+                <a href="https://developers.google.com/youtube" target="_blank">
+                    YouTube Data API
+                </a>.
+                El contenido mostrado pertenece a sus respectivos propietarios.
+            </p>
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
