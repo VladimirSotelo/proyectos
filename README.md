@@ -1,1 +1,1 @@
-En esta carpate se encuentran los proyecto que he realizar fuera de la universidad hasta el momento, un reproductod de video el cual utilizar la api de youtube. siguo realizando mejoras al mismo y realizadno nuevos proyectos para añadirlos a esta carpeta
+En esta carpate se encuentran los proyecto que he realizar fuera de la universidad hasta el momento, un reproductor de video el cual utilizar la api de youtube. siguo realizando mejoras al mismo y realizando nuevos proyectos para añadirlos a esta carpeta
